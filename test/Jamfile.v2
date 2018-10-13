@@ -8,7 +8,10 @@
 
 # For more information, see http://www.boost.org/
 
+import testing ;
+
   test-suite logic  : 
+    [ compile-fail implicit_conversion.cpp ]
     [ run tribool_test.cpp ]
     [ run tribool_rename_test.cpp ]
     [ run tribool_io_test.cpp ]
